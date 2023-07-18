@@ -9,6 +9,10 @@
       href="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_css_bootstrap.min.css"
     />
     <style>
+      body {
+        background-color: lightgray;
+      }
+
       .navbar-nav .nav-link.active {
         color: #fff;
       }
@@ -19,7 +23,6 @@
 
       section {
         height: 100vh;
-        background-color: lightgray;
       }
 
       header {
@@ -63,12 +66,45 @@
         </div>
       </div>
     </header>
-    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+    <div class="container" data-bs-spy="scroll" data-bs-target="#cabecalho">
       <section id="inicio">
         <h2>Início</h2>
       </section>
       <section id="produtos">
         <h2>Produtos</h2>
+        <nav class="nav nav-tabs">
+          <button
+            data-bs-toggle="tab"
+            data-bs-target="#aba1"
+            class="nav-link active"
+            type="button"
+          >
+            Eletrônicos
+          </button>
+          <button
+            data-bs-toggle="tab"
+            data-bs-target="#aba2"
+            class="nav-link"
+            type="button"
+          >
+            Moda masculina
+          </button>
+          <button
+            data-bs-toggle="tab"
+            data-bs-target="#aba3"
+            class="nav-link"
+            type="button"
+          >
+            Moda feminina
+          </button>
+        </nav>
+        <div class="tab-content">
+          <div class="tab-pane active" id="aba1">
+            Conteúdo da aba eletrônicos
+          </div>
+          <div class="tab-pane" id="aba2">Conteúdo da aba moda masculina</div>
+          <div class="tab-pane" id="aba3">Conteúdo da aba moda feminina</div>
+        </div>
       </section>
       <section id="promocoes">
         <h2>Promoções</h2>
